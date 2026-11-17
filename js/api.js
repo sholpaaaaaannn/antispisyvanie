@@ -1,4 +1,4 @@
-import { API_BASE } from './config.js';
+import { API_BASE } from './config.js?v=2';
 const KEY='antispisyvanie.session';
 export const getToken=()=>sessionStorage.getItem(KEY)||'';
 export const setToken=token=>token?sessionStorage.setItem(KEY,token):sessionStorage.removeItem(KEY);
